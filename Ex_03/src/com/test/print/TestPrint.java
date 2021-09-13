@@ -112,6 +112,8 @@ public class TestPrint {
 		result = su1 == 1 && su2 == 1 ? "총 2문제를 맞추셨습니다." : su1 == 2 && su2 == 2 ? "총 0 문제를 맞추셨습니다.":"총 1문제를 맞추셨습니다.";
 		System.out.println(result);
 	}
-	public
+	public void ex6() {
+		
+	}
 }
 
