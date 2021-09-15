@@ -15,7 +15,11 @@ public class Run {
 		//sm.Ex9();
 		//sm.Ex12();
 		//sm.Ex13();
-		sm.Ex14();
+		//sm.Ex14();
+		//sm.ex15();
+		//sm.ex16();
+		//sm.ex17();
+		sm.ex18();
 	}
 	
 

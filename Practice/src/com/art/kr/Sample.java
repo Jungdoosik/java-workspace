@@ -188,4 +188,78 @@ public class Sample {
 		result = su%2 == 0 ? "입력한 수는 짝수다":"입력한 수는 홀수다";
 		System.out.println(result);
 	}
+	public void ex15() {
+		int i = 7;
+		int sum = 0;
+		int count = 0;
+		while(sum <= 1000) {
+			sum = sum + i;
+			count=count+1;
+			System.out.println("count=" + count + " i=" + i + " sum=" + sum);
+			i=i+7;
+		}
+	}
+	public void ex16() {
+		int month;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("일수를 알고싶은 달을 입력하시오 : ");
+		month = sc.nextInt();
+		
+		switch(month) {
+		case 1 : 
+		case 3 : 
+		case 5 : 
+		case 7 : 
+		case 8 : 
+		case 10 : 
+		case 12 : System.out.println(month + "월달은 31일 입니다."); break;
+		
+		case 4 :
+		case 6 :
+		case 9 :
+		case 11 : System.out.println(month + "월달은 30일 입니다."); break;
+		
+		case 2 : System.out.println("2월달은 28일 입니다."); break;
+
+			default : System.out.println("잘 못 입력하셨습니다.");
+		}
+		
+	}
+	public void ex17() {
+		char grade;
+		System.out.println("장학금 지불 시스템 입니다.");
+		System.out.println("학생 학점을 입력해주세요\n" +"(A학점,B학점,C학점,D학점,F학점)");
+		Scanner sc = new Scanner(System.in);
+		System.out.print("입력 : ");
+		grade = sc.next().charAt(0);
+		
+		switch(String.valueOf(grade).toUpperCase()) {
+		case "A" : System.out.println("수고하셨습니다. 장학금을 100% 지급해드리겠습니다");break;
+		case "B" : System.out.println("약간 아쉽네요 장학금 50% 지원입니다");break;
+		case "C" : System.out.println("이번 학기 장학금은 없네요.. 힘내세요");break;
+		case "D" : System.out.println("장학금보다는 학고는 면하셨네요..노력하세요");break;
+		case "F" : System.out.println("이번학기 장학금으로 학고를 맞으셨습니다. 3GO일시 제적");break;
+		}
+	}
+	public void ex18() {
+		int su1;
+		int su2;
+		char ch;
+		System.out.println("===== 계산기 프로그램 =====");
+		Scanner sc = new Scanner(System.in);
+		System.out.print("연산자 입력 (+, -, *, /) : ");
+		ch = sc.next().charAt(0);
+		
+		System.out.print("첫번째 숫자 입력 : ");
+		su1 = sc.nextInt();
+		System.out.print("두번째 숫자 입력 : ");
+		su2 = sc.nextInt();
+		
+		System.out.println("===== 결      과 ======");
+		switch(ch) {
+		case '+' : System.out.println(su1 + " + " + su2 + " = " + (su1+su2));
+		}
+	}
+	
 }
