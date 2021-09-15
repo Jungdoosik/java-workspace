@@ -19,7 +19,8 @@ public class Run {
 		//sm.ex15();
 		//sm.ex16();
 		//sm.ex17();
-		sm.ex18();
+		//sm.ex18();
+		sm.ex19();
 	}
 	
 

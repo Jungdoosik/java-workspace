@@ -258,8 +258,31 @@ public class Sample {
 		
 		System.out.println("===== 결      과 ======");
 		switch(ch) {
-		case '+' : System.out.println(su1 + " + " + su2 + " = " + (su1+su2));
+		case '+' : System.out.println(su1 + " + " + su2 + " = " + (su1+su2));break;
+		case '-' : System.out.println(su1 + " - " + su2 + " = " + (su1-su2));break;
+		case '*' : System.out.println(su1 + " * " + su2 + " = " + (su1*su2));break;
+		case '/' : System.out.println(su1 + " / " + su2 + " = " + (su1/su2));break;
 		}
+	}
+	public void ex19() {
+		String fruit;
+		int su;
+		System.out.println("------ 과일 메뉴 ------");
+		System.out.println("사과 / 딸기 / 수박 / 바나나 / 복숭아");
+		Scanner sc = new Scanner(System.in);
+		System.out.print("과일 이름을 입력하세요 : ");
+		fruit = sc.next();
+		switch(fruit) {
+		case "사과" : System.out.println("사과는 개당 2000원 입니다.");break;
+		case "딸기" : System.out.println("딸기는 개당 1000원 입니다.");break;
+		case "수박" : System.out.println("수박는 개당 8000원 입니다.");break;
+		case "바나나" : System.out.println("바나나는 개당 4000원 입니다.");break;
+		case "복숭아" : System.out.println("복숭아는 개당 5000원 입니다.");break;
+			default : System.out.println("없는거 골랐어요~ 다시다시");
+		}
+		System.out.println("몇개 주문하시겠습니까? : ");
+		su = sc.nextInt();
+		
 	}
 	
 }

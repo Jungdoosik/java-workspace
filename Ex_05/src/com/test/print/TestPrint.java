@@ -189,5 +189,23 @@ public class TestPrint {
 			i++;
 		}System.out.println(start + " ~ " + last + "까지의 합은 [" + sum + "] 입니다.");
 	}
+	public void ex7() {
+		System.out.println("자동 덧셈 계산기");
+		
+		Scanner sc = new Scanner(System.in);
+		int su;
+		int sum = 0;
+		int count = -1;
+		do {
+			System.out.print("정수를 입력하세요 (0이면 종료) : ");
+			su = sc.nextInt();
+			sum += su;
+			count++ ;
+			
+		}while(su != 0); //입력한 수가  0이 아니면 (음수 또는 양수) 계속 동작
+						 //입력한 수가 0이면 동작하지 말아라는 뜻
+		System.out.println("입력한 ["+ count +"]개의 정수 합은 ["+sum+"] 입니다.");
+	
+	}
 
 }

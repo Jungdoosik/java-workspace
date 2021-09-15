@@ -12,7 +12,11 @@ public class TestMain {
 		//tp.ex4();
 		//tp.ex5();
 		//tp.ex6();
-		tp.ex7();
+		//tp.ex7();
+		//tp.ex8();
+		//tp.ex9();
+		tp.ex10();
+
 	}
 
 }
