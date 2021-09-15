@@ -158,7 +158,7 @@ public class TestPrint {//for문 사용하기
 		char ch1;
 		
 		Scanner sc = new Scanner(System.in);
-		ch1 = sc.next().charAt(0);
+		
 		 
 		
 		while(true) {
@@ -166,9 +166,16 @@ public class TestPrint {//for문 사용하기
 			System.out.println("계산기 프로그램 ver1.0");
 			System.out.print("연산자를 입력하세요 ( +, -, *, / (종료는 q)) : ");
 			ch1 = sc.next().charAt(0);
+				
 				if(ch1 == 'q' || ch1 == 'Q') {
 					System.out.println("계산기를 이용해주셔서 감사합니다.");break;
 				}
+				if(ch1 != '+' && ch1 != '-' && ch1 != '*' && ch1 != '/') {
+					System.out.println("잘못입력하셨습니다. 다시입력해주세요!"); 
+					System.out.println();continue;
+					
+					}	
+				
 				System.out.print("첫번째 수 입력 : ");
 				su1 = sc.nextInt();
 				System.out.print("두번째 수 입력 : ");
@@ -179,6 +186,7 @@ public class TestPrint {//for문 사용하기
 						case '-' : System.out.println(su1 + " - " + su2 + " = " + (su1-su2));break;
 						case '*' : System.out.println(su1 + " * " + su2 + " = " + (su1*su2));break;
 						case '/' : System.out.println(su1 + " / " + su2 + " = " + (su1/(double)su2));break;
+						default : System.out.println("잘 못 입력하셨습니다.");
 					}
 					System.out.println();
 					System.out.println("------ Next ------");

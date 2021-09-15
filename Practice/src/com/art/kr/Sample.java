@@ -267,22 +267,107 @@ public class Sample {
 	public void ex19() {
 		String fruit;
 		int su;
+		int price = 0;
+		
 		System.out.println("------ 과일 메뉴 ------");
 		System.out.println("사과 / 딸기 / 수박 / 바나나 / 복숭아");
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.print("과일 이름을 입력하세요 : ");
 		fruit = sc.next();
-		switch(fruit) {
-		case "사과" : System.out.println("사과는 개당 2000원 입니다.");break;
-		case "딸기" : System.out.println("딸기는 개당 1000원 입니다.");break;
-		case "수박" : System.out.println("수박는 개당 8000원 입니다.");break;
-		case "바나나" : System.out.println("바나나는 개당 4000원 입니다.");break;
-		case "복숭아" : System.out.println("복숭아는 개당 5000원 입니다.");break;
-			default : System.out.println("없는거 골랐어요~ 다시다시");
-		}
-		System.out.println("몇개 주문하시겠습니까? : ");
-		su = sc.nextInt();
 		
+		switch(fruit) {
+		case "사과" : System.out.println("사과는 개당 2000원 입니다.");
+		price = 2000; break;			
+		case "딸기" : System.out.println("딸기는 개당 1000원 입니다.");
+		price = 1000;break;
+		case "수박" : System.out.println("수박는 개당 8000원 입니다.");
+		price = 8000;break;
+		case "바나나" : System.out.println("바나나는 개당 4000원 입니다.");
+		price = 4000;break;
+		case "복숭아" : System.out.println("복숭아는 개당 5000원 입니다.");
+		price = 5000;break;
+		  
+		}
+		
+		System.out.print("몇개 주문하시겠습니까? : ");
+		su = sc.nextInt();
+		System.out.println("주문하신 과일 ["+ fruit + "]의 [" + su + "]개 금액은 총 " + (price * su) + "원 입니다."  );
+		
+	}
+	public void ex20() {
+		int su;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("점수 입력 : ");
+		su= sc.nextInt();
+		 
+		if(0<=su && su<=100) {
+			
+			switch(su/10) {
+			case 10 :
+			case 9 : System.out.println(su + "점 ==> A등급");break;
+			case 8 : System.out.println(su + "점 ==> B등급");break;
+			case 7 : System.out.println(su + "점 ==> C등급");break;
+			case 6 : System.out.println(su + "점 ==> D등급");break;
+			 default : System.out.println(su + "점 미만 ==> F등급");
+			}
+		}else {
+			System.out.println("잘못된 점수 입력");
+		}
+	}
+	public void ex21() {
+		int su1 = 0;
+		
+		while(su1 < 5) {
+			System.out.println("안녕하세요");
+			su1++;
+		}
+		
+	}
+	public void ex22() {
+		int su1;
+		int su2 = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("동작할 횟수 입력 : ");
+		su1 = sc.nextInt();
+		
+		while(su2 < su1) {
+			System.out.println((su2+1) + ". 안녕하세요");
+			su2++;
+		}
+	}
+	public void ex23() {
+		int su1 = 1;
+		
+		while(su1 < 10) {
+			System.out.println("2 x " + su1 + " = " + (2*su1));
+			su1++;
+		}
+	}
+	public void ex24() {
+		int su1;
+		int su2 = 1;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("출력할 단수 입력 : ");
+		su1 = sc.nextInt();
+		
+		while(su2 < 10) {
+			System.out.println(su1 + " x " + su2 + " = " + (su1*su2));
+			su2++;
+		}
+	}
+	public void ex25() {
+		int su1 = 1;
+		int su2;
+		int sum = 0;
+		Scanner sc = new Scanner(System.in);
+		
+		while(su1 <= 5) {
+			System.out.print(su1 + "번째 정수 입력 : ");
+			su2 = sc.nextInt();
+			su1++;
+			sum += su2;
+		}System.out.println("입력한 5개의 정수 합 : " + sum );
 	}
 	
 }

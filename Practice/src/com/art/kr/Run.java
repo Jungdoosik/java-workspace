@@ -20,7 +20,13 @@ public class Run {
 		//sm.ex16();
 		//sm.ex17();
 		//sm.ex18();
-		sm.ex19();
+		//sm.ex19();
+		//sm.ex20();
+		//sm.ex21();
+		//sm.ex22();
+		//sm.ex23();
+		//sm.ex24();
+		sm.ex25();
 	}
 	
 
