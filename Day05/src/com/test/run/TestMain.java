@@ -9,7 +9,7 @@ public class TestMain {
 		  
 		
 		//랜덤수를 추출하려면 사용하는 Class? Random Class
-	      Random r = new Random();
+	      //Random r = new Random();
 	      
 	      //int su = r.nextInt();//난수를 뽑아내는 메소드
 	      
@@ -52,7 +52,7 @@ public class TestMain {
 	      int a;// 쓰레이값(Stack 메모리에 생성하기 떄문에
 	      int [] arr1 = new int [5];//0으로 초기화가 기본으로 되어있슴*/
 	      
-	      int [] arr = new int[5];
+	     /* int [] arr = new int[5];
 	      
 	      int index = 0;
 	      
@@ -71,31 +71,27 @@ public class TestMain {
 	      System.out.println(arr[1]);
 	      System.out.println(arr[2]);
 	      System.out.println(arr[3]);
-	      System.out.println(arr[4]);
+	      System.out.println(arr[4]);*/
 	      
 	      /*for(int i=0; i<5; i++) {
 	         arr[i]= (i+1) * 100;
 	      }
 	      for(int i = 0; i < 5; i++) {
 	         System.out.println(arr[i]);
-	      }
-	      
-	      int [] arr2 = new int[5];
+	      }*/
+	     
+	      int [] arr2 = new int[6];
 	      Scanner sc = new Scanner(System.in);
 	      
-	      for(int i =0; i <5;i++) {
+	      for(int i =0; i <arr2.length-1;i++) {
 	         System.out.print((i+1)+"번째 데이터 입력 : ");
-	         arr[i] = sc.nextInt();
+	         arr2[i] = sc.nextInt();
 	      }
 	      System.out.println("===== 입력한 데이터 출력 =====");
-	      for(int i = 0; i<5; i++) {
-	         System.out.println("arr["+ i + "] : " + arr[i]);
-	      }*/
+	      for(int i = 0; i<arr2.length-1; i++) {
+	    	  arr2[5] = arr2[5]+arr2[i];
+	    	  System.out.println("index["+i+"] : " + arr2[i]);
+	      }System.out.println("최종데이터 : " + arr2[5]);
 	   }
 }
-
-	      
-  
-
-
 
