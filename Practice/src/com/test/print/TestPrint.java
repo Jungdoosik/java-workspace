@@ -963,7 +963,7 @@ public class TestPrint {
 		
 		for(int i = 0;i < su1; i++){
 			for(int j = 0; j < su2; j++){
-				arr[i][j] = 'a' + r.nextInt(26);
+				arr[i][j] = 'a' + r.nextInt(26); //'a'이 왜 붙는지는 모르겠지만 삭제하면 문자가 안나옴
 			}
 		}
 		
