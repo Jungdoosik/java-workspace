@@ -53,7 +53,8 @@ public class TestRun {
 		//tp.ex45();
 		//tp.ex46();
 		//tp.ex47();
-		tp.ex48();
+		//tp.ex48();
+		tp.test2();
 		
 		
 		
@@ -138,6 +139,7 @@ public class TestRun {
 				System.out.print("*");
 			}System.out.println();
 		}System.out.println("================Q10");*/
+		
 		
 		
 	}

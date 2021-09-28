@@ -971,6 +971,27 @@ public class TestPrint {
 			for(int j = 0; j < su2; j++){
 				System.out.print((char)arr[i][j] + " ");
 			}System.out.println();
-		}	
+		}
+	}
+	public void test2() {
+	Scanner sc = new Scanner(System.in);
+	char ch;
+	System.out.print("영문자 입력 : ");
+	ch = sc.next().charAt(0);
+	System.out.println("===== 변 환 =====");
+	System.out.print(ch + " --> ");
+	ch = charChange(ch);
+	System.out.println(ch);
+	}
+
+	public char charChange(char ch) {
+		if('a' <= ch && ch <= 'z') {
+			ch = (char)(ch-32);
+		}else if('A'<= ch && ch <= 'Z') {
+			ch = (char)(ch+32);
+		}
+		return ch;
+	
+	
 	}
 }
