@@ -2,7 +2,9 @@ package com.test.run;
 import com.test.point.Gold;
 import com.test.point.Platinum;
 import com.test.point.PntMgr;
+import com.test.point.Ruby;
 import com.test.point.Silver;
+import com.test.point.VVip;
 import com.test.point.Vip;
 
 public class TestMain {
@@ -25,6 +27,8 @@ public class TestMain {
 			mgr.insertData(new Platinum("플플이","Platinum",6300));
 			mgr.insertData(new Platinum("마마이","Platinum",1230));
 			mgr.insertData(new Platinum("로로이","Platinum",7560));
+			mgr.insertData(new VVip("강강이","VVip",9000));//VVip는 이자율 8%
+			mgr.insertData(new Ruby("강냉이","Ruby",3000));//Ruby는 이자율 20%
 			mgr.printData();
 
 	}

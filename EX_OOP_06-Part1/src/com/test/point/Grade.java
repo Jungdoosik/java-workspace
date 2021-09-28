@@ -1,10 +1,19 @@
 package com.test.point;
 
-public class Grade {
+public abstract class Grade {
 	
 	protected String name;
 	protected String grade;
 	protected int point;
+	
+	public Grade() {}
+	
+	public Grade(String name, String grade, int point) {
+		this.name = name;
+		this.grade = grade;
+		this.point = point;
+	}
+	public  abstract double getInterest() ;
 	
 	public String getName() {
 		return name;
