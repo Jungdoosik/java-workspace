@@ -13,7 +13,7 @@ public abstract class Grade {
 		this.grade = grade;
 		this.point = point;
 	}
-	public  abstract double getInterest() ;
+	public abstract double getInterest() ;
 	
 	public String getName() {
 		return name;

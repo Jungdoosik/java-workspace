@@ -5,9 +5,10 @@ import com.test.print.TestPrint;
 public class TestMain {
 
 	public static void main(String[] args) {
-		TestPrint tp = new TestPrint();
-		//tp.ex1();
-		tp.ex2();
+	
+		TestPrint t = new TestPrint();
+		t.ex1();
+		t.ex2();
 
 	}
 

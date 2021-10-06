@@ -21,7 +21,7 @@ public class MemberController {
 			switch(select) {
 			case 1 : insertMember(); break;
 			case 2 : printMember(); break;
-			case 0 : System.out.println("이용해주셔서 감사합니다."); break;
+			case 0 : System.out.println("이용해주셔서 감사합니다."); return;
 			}
 		}
 	}
@@ -32,6 +32,7 @@ public class MemberController {
 		System.out.print("새로 추가될 회원의 이름 입력 : ");
 		String name = sc.next();
 		m.setName(name);
+		
 		System.out.print("새로 추가될 회원의 나이 입력 : ");
 		int age = sc.nextInt();
 		m.setAge(age);
@@ -40,6 +41,7 @@ public class MemberController {
 		System.out.print("새로 추가될 회원의 주소 입력 : ");
 		String addr = sc.next();
 		m.setAddr(addr);
+		sc.nextLine();
 	}
 	//회원 정보를 출력할 수 있도록 하는 메소드
 	public void printMember() {

@@ -21,6 +21,7 @@ public class PntMgr {
 						,g[i].getGrade()
 						,g[i].getPoint()
 						,g[i].getInterest());
+			
 		}
 	}
 }

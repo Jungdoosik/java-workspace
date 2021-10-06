@@ -9,7 +9,7 @@ public class MemberController {
 		this.m = m;
 	}
 	public void printData() {
-		System.out.println("-----결과 출력-----");
+		System.out.println("-------정보-------");
 		System.out.println("이름 : " + m.getName());
 		System.out.println("나이 : " + m.getAge());
 		System.out.println("주소 : " + m.getAddr());
