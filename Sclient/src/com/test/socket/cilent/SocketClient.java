@@ -35,22 +35,22 @@ public class SocketClient {
 			
 			
 			while(true) {
-			String message = dis.readUTF();
-			if(message.equals("exit")) {
-				System.out.println("Server에서 연결을 해제 하였습니다.");
-				break;
-			}
-			System.out.println("Server : " + message);
+				String message = dis.readUTF();
+				if(message.equals("exit")) {
+					System.out.println("Server에서 연결을 해제 하였습니다.");
+					break;
+				}
+				System.out.println("Server : " + message);
+				
 			
-			
-			System.out.print("보낼메세지 : ");
-			String sendMessage = sc.nextLine();
-			dos.writeUTF(sendMessage);
-			
-			if(sendMessage.equals("exit")) {
-				System.out.println("클라이언트에서 연결을 종료하였습니다.");
-				break;
-			}
+				System.out.print("보낼메세지 : ");
+				String sendMessage = sc.nextLine();
+				dos.writeUTF(sendMessage);
+				
+				if(sendMessage.equals("exit")) {
+					System.out.println("클라이언트에서 연결을 종료하였습니다.");
+					break;
+				}
 			}
 			
 			
